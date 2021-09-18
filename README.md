@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @SilvanaShirlow
+- 👋 Hi, I’m @Silvana
 - 👀 I’m interested in web
 - 🌱 I’m currently learning web technologies
 - 💞️ I’m looking to collaborate on php
