@@ -1,0 +1,658 @@
+$primary-color:rgb(25,40,45);
+
+// Default fill for button. Is either solid or hollow.
+$button-fill: solid !default;
+
+// Default background color for button.
+$button-background: $primary-color;
+
+// Default hover background color for button.
+$button-background-hover: scale-color($button-background, $lightness: -15%) !default;
+
+// Default font color for button.
+$button-font-color: #fff !default;
+
+// Default alternative font color for button.
+$button-font-color-alt: #000 !default;
+
+// Default radius for button.
+$button-radius: 0 !default;
+
+
+/* color variables */
+$colorpurple: rgb(49,3,67);
+$colorblue: rgb(58,67,142);
+$colorpink: rgb(183,107,109);
+$colordarkgrey: rgb(40,40,40);
+$colorwhite: rgb(218,211,201);
+
+@import "_nav.scss";
+
+
+/*# sourceMappingURL=app.css.map */
+.wrapper {
+  margin: 0px auto;
+  width: auto;
+  height: auto;
+}
+
+body {
+  margin: 0.5%;
+}
+
+.grid-x {
+  margin-bottom: 1%;
+  margin-top: 1%;;
+}
+
+.grid-padding-x{
+  margin-bottom:1em;
+}
+.grid-padding-x > .cell {
+  padding-bottom: 2em;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.grid-container {
+  max-width:100%;
+}
+
+.header_icons {
+  float: right;
+  margin-top: 2em;
+  margin-right:10%;
+}
+
+.breadcrumbs li:not(:last child)::after{
+  content: "/";
+}
+
+ul.breadcrumbs {
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.breadcrumbs a{
+   color: $colorpurple;
+}
+
+.breadcrumbs a:hover {
+  background-color: rgba(183,107,109,0.4);
+}
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+  align-items: center;
+}
+
+.icon-row {
+  content: "";
+  clear: both;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit-image {
+  padding-top: 1em;
+}
+
+a:focus {
+  color: $colorpink;
+}
+
+.imageleft {
+  float:left;
+  border: solid 1px $colorpurple;
+  width: 50%;
+}
+
+h1 {
+  margin-top: 2.5rem;
+  font-family: "Yellowtail";
+  color: $colorpink;
+  padding-left: 3%;
+}
+
+h2 {
+  text-align: center;
+  font-family: "GoodUnicorn";
+  font-size: 3rem;
+  color: $colorpurple;
+}
+
+h3 {
+  font-family: "Coolvetica";
+  font-size: 2rem;
+  color: $colorpink;
+}
+
+h4 {
+  font-family: "Coolvetica";
+  font-size: 1.5rem;
+  font-weight: 575;
+}
+
+h5 {
+  margin-top: 20px;
+  font-family: "GoodUnicorn";
+  font-size: 2rem;
+}
+
+h6 {
+  font-family: "Coolvetica";
+  font-size: 1.5rem;
+  color: $colorpink;
+}
+
+.menu .menu-text {
+ padding:0px;
+}
+
+.primary.callout {
+  color:$colorpurple;
+  background-color: white;
+  height: auto;
+  align-content: center;
+  text-align: center;
+  width:75%;
+  }
+
+
+.primary {
+  border:none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+
+a:hover {
+ color:$colordarkgrey;
+ background-color: $colorpink;
+}
+ 
+.button {
+  background-color: $colorpink;
+  border-radius: 20px;
+  color: $colordarkgrey;
+}
+  
+.button:hover {
+  background-color:$colorblue; 
+}
+
+.button:focus {
+  background-color:$colorwhite; 
+  color: $colordarkgrey;
+}
+
+.top-bar ul {
+  background-color: $colorpurple;
+  font-family: "Coolvetica";
+  font-size: large;
+}
+
+.dropdown.menu li { 
+  background-color: $colorpurple;}
+   .is-active:active{
+    color: $colorpink; }
+   .is-dropdown-submenu-parent:active {
+    border-color: $colorwhite;
+   }
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  border-color: $colorwhite transparent transparent $colordarkgrey
+
+}
+
+.dropdown.menu > li.is-active > a {
+  background: transparent $colordarkgrey;
+  color: $colorpink; 
+}
+
+.drilldown .is-drilldown-submenu {
+  background: $colordarkgrey;
+}
+
+.top-bar {
+  background-color: $colorpurple;
+}
+
+.logo {
+  float: left
+}
+
+.copyright {
+  text-align:center;
+  font-size: small;
+  color: $colorwhite;
+}
+
+.sitemenu {
+  background-color: $colordarkgrey;
+  margin-left: 10%;
+  font-family: "Coolvetica";
+  color: $colorpink;
+}
+
+.drilldown .is-drilldown-submenu-parent > a::after {
+  border-color: transparent $colorpink;
+}
+
+.drilldown .js-drilldown-back > a::before {
+  border-color: transparent $colorpink;
+}
+
+.drilldown .is-drilldown-submenu-parent > a {
+  width:110px;
+}
+
+.drilldown a {
+  background: $colordarkgrey;
+  color: $colorwhite;
+}
+
+.menu .is-active > a {
+  color:$colorpink;
+  background: $colordarkgrey;
+}
+.is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after {
+  border-color: transparent transparent transparent $colorwhite;
+}
+
+.subscribe {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1em;
+  align-items: center;
+  justify-content: center;
+  color: $colorwhite;
+}
+
+.tabs {
+  margin: 30px;
+}
+
+.tabs-title > a {
+  font-size: 1rem;
+  color: $colorpink;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+  color: $colordarkgrey;
+  background-color: rgba(183,107,109,0.6);
+}
+
+.tabs-title > a:hover {
+  background: rgba(183,107,109,0.4);
+  color: $colorpurple;
+}
+
+.footer {
+  background-color: $colordarkgrey;
+  width:100%;
+}
+
+.icon {
+  padding: 1em;
+  align-items: center;
+}
+
+.follow {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1em;
+  margin-bottom: 0px;
+  color: $colorwhite;
+}
+
+.input-group-field {
+  width: 220px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  border-radius: 20px;
+  }
+
+.success_button {
+  width: fit-content;
+  background-color: $colorpink;
+  color: $colorwhite;
+  display: inline-block;
+  padding: 0.75rem;
+  border-radius: 20px;
+ }
+
+.submit_button {
+  width: fit-content;
+  background-color: rgb(87, 6, 87);
+  color: white;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+ }
+
+
+.video_placeholder {
+  margin-top:5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.placeholder {
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+
+.top-bar input {
+  max-width: 200px;
+  border-radius: 20px;
+  margin-right: 0px;
+}
+
+.subscribe_input {
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1%;
+  border-radius: 20px;
+}
+
+.findout_button {
+  width: fit-content;
+  background-color: $colorblue;
+  color: $colorwhite;
+  display: inline-block;
+  padding: 1.5%;
+  align-content: center;
+  border-radius: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.blurb {
+  font-size: medium;
+  }
+
+.video, iframe {
+  align-content: center;
+  text-align: center;
+  color: $colorblue;
+  margin-top: 1em;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.accordion {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.feature {
+  padding-top:2%;
+}
+
+.funfact {
+  align-content: center;
+  text-align: center;
+  color: $colorblue;
+  margin-top: 1em;
+  font-style: italic;
+  font-size: x-large;
+  font-family: "Coolvetica_italic";
+  border: dotted;
+  padding: 2%;
+}
+
+.funfact:hover{
+  padding: 2%;
+  background-color:rgba(183,107,109,0.6);
+  color: $colordarkgrey;
+}
+
+.featured_product{
+  padding: 1rem;
+  margin: 1 rem;
+}
+
+.special_row {
+ background-color: rgba(49,3,67,0.2);
+}
+
+.sitemenu ul li a:hover{
+  color: $colorpink;
+}
+
+.success_button:hover{
+ color: $colorwhite;
+ background-color: $colorblue;
+}
+
+.submit_button:hover{
+  color: $colorwhite;
+  background-color: $colorblue;
+ }
+
+.products {
+  font-weight: bolder ;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.vertical.menu.products ul a:hover {
+ background-color:$colordarkgrey; 
+ color: $colorpink
+}
+
+.vertical.menu.nested ul li a:hover {
+  background-color:$colordarkgrey; 
+  color: $colorpink;
+ }
+
+ .map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2%;
+ }
+
+form {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+    }
+
+.input-group > :first-child, .input-group > :first-child.input-group-button > * {
+      border-radius: 20px;
+      padding: 0.75rem;
+     }
+
+.input-group > :last-child, .input-group > :last-child.input-group-button > * {
+     border-radius: 20px;
+     padding: 0.75rem;
+     }
+
+.sub-primary-callout{
+    color:$colorpurple;
+    background-color: white;
+    height: auto;
+    align-content: center;
+    text-align: center;
+  }
+ 
+  .pagination .current {
+    background: $colorblue;
+    color: $colorwhite;
+  }
+  .pagination a:hover {
+    background: $colorpink;
+    color: $colorwhite;
+  }
+
+  .acknowledgement {
+    font-size:smaller;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    color: $colorwhite;
+    }
+
+  a{
+     color:$colorpink;
+      }
+
+.input-group > :last-child.input-group-button > * {
+  margin-right: 10px;
+}
+
+blockquote {
+  color: $colorblue;
+  border-left: 2px solid $colorblue;
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
+  margin-top: 50px;
+}
+
+.media-object-section:first-child {
+  padding-right: 1rem;
+  margin-left: 50px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.thumbnail {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: table;
+}
+
+//.menu input, .menu select, .menu a, .menu button {
+    //margin-bottom: 0;
+//}
+
+//.menu a, .menu .button {
+    //line-height: 1;
+    //text-decoration: none;
+    //display: block;
+    //padding: 0.7rem 1rem;
+//}
+
+[data-whatintent="mouse"] *, [data-whatintent="mouse"] *:focus, [data-whatintent="touch"] *, [data-whatintent="touch"] *:focus, [data-whatinput="mouse"] *, [data-whatinput="mouse"] *:focus, [data-whatinput="touch"] *, [data-whatinput="touch"] *:focus {
+    outline: none;
+}
+
+ul li a {
+ color:black;
+}
+
+//.dropdown.menu > li.is-dropdown-submenu-parent > a {
+  //color: $colorwhite;
+  
+//}
+
+ .dropdown.menu a {
+  color: $colorwhite;
+}
+
+//.dropdown .is-dropdown-submenu a:active {
+  //background-color:$colorblue;
+  //color:$colorwhite;
+//}
+
+//.dropdown .is-dropdown-submenu a:hover {
+  //background-color: #b76b6d;
+  //color: #dad3c9;
+//}
+
+.callout.alert {
+  background-color: rgba(183,107,109,0.7);
+  color: $colordarkgrey;
+}
+
+.is-invalid-input:not(:focus) {
+  border-color: $colorpink;
+  color: $colordarkgrey;
+  background-color: rgba(183,107,109,0.5);
+}
+
+.is-invalid-input:not(:focus)::placeholder {
+  color: $colorpink;
+  font-weight: bold;
+}
+
+.callout.alert {
+  background-color: rgba(183,107,109,0.7);
+  font-weight: bolder;
+  color: $colordarkgrey;
+}
+
+.has-tip {
+  border-bottom: none;
+}
+
+.is-invalid-label {
+  color: $colorpink;
+}
+
+.form-error {
+  color: rgba(49,3,67,0.8);
+}
+
+.help-text {
+  color: $colorpink;
+  font-weight: bold;
+}
+
+.qr_code {
+  padding-bottom: 2em;
+}
+
+@font-face {
+  font-family: "Yellowtail";
+  src: url("../fonts/Yellowtail-Regular.otf");
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../fonts/coolvetica\ rg.otf");
+}
+
+@font-face {
+  font-family: "GoodUnicorn";
+  src: url("../fonts/Good\ Unicorn\ -\ TTF.ttf");
+}
+
+@font-face {
+  font-family: "Coolvetica_italic";
+  src: url("../fonts/coolvetica\ rg\ it.otf");
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .dropdown.menu a {
+    color: #dad3c9;
+}
+}
