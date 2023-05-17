@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @SilvanaShirlow
-- 👀 I’m interested in web
+- 👀 I’m interested in web development
 - 🌱 I’m currently learning Front End Web Development 
 - 💞️ I’m looking to collaborate on php, scss, css, javascript
 - 📫 How to reach me dm
